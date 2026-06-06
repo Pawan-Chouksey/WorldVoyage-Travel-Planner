@@ -7,19 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WorldVoyage- Travel agancy</title>
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -29,9 +20,7 @@
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- #HEADER -->
 
   <header class="header" data-header>
 
@@ -55,10 +44,17 @@
         </a>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="300" height="80" alt="Tourly logo">
+          <img src="./assets/images/logo.png" width="1067" height="298" alt="WorldVoyage logo">
         </a>
 
         <div class="header-btn-group">
+
+          <button class="theme-toggle-btn" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+            <span class="theme-toggle-thumb">
+              <ion-icon name="sunny" class="sun-icon"></ion-icon>
+              <ion-icon name="moon" class="moon-icon"></ion-icon>
+            </span>
+          </button>
 
           <button class="search-btn" aria-label="Search">
             <ion-icon name="search"></ion-icon>
@@ -142,7 +138,7 @@
 
         </nav>
 
-        <button class="btn btn-primary">Book Now</button>
+        <a href="#package" class="btn btn-primary" data-nav-link>Book Now</a>
 
       </div>
     </div>
@@ -150,15 +146,10 @@
   </header>
 
 
-
-
+  <!-- #HOME -->
 
   <main>
     <article>
-
-      <!-- 
-        - #HERO
-      -->
 
       <section class="hero" id="home">
         <div class="container">
@@ -178,13 +169,8 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #TOUR SEARCH
-      -->
+    
+      <!-- #TOUR SEARCH -->
 
       <section class="tour-search">
         <div class="container">
@@ -226,10 +212,8 @@
 
 
 
-
-      <!-- 
-        - #POPULAR
-      -->
+ 
+      <!-- #POPULAR -->
 
       <section class="popular" id="destination">
         <div class="container">
@@ -346,13 +330,8 @@
         </div>
       </section>
 
+      <!-- #PACKAGE -->
 
-
-
-
-      <!-- 
-        - #PACKAGE
-      -->
 
       <section class="package" id="package">
         <div class="container">
@@ -593,12 +572,8 @@
       </section>
 
 
+      <!-- #GALLERY -->
 
-
-
-      <!-- 
-        - #GALLERY
-      -->
 
       <section class="gallery" id="gallery">
         <div class="container">
@@ -651,10 +626,8 @@
 
 
 
+      <!-- #CTA -->
 
-      <!-- 
-        - #CTA
-      -->
 
       <section class="cta" id="contact">
         <div class="container">
@@ -677,13 +650,7 @@
     </article>
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
+  <!-- #FOOTER -->
 
   <footer class="footer">
 

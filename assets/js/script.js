@@ -1,5 +1,29 @@
 'use strict';
 
+const themeToggleBtn = document.querySelector("[data-theme-toggle]");
+const savedTheme = localStorage.getItem("theme");
+const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const setTheme = function (theme) {
+  const darkModeEnabled = theme === "dark";
+
+  document.documentElement.dataset.theme = theme;
+  themeToggleBtn.setAttribute("aria-pressed", darkModeEnabled);
+  themeToggleBtn.setAttribute(
+    "aria-label",
+    darkModeEnabled ? "Switch to light mode" : "Switch to dark mode"
+  );
+}
+
+setTheme(savedTheme || (prefersDarkMode ? "dark" : "light"));
+
+themeToggleBtn.addEventListener("click", function () {
+  const newTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+
+  setTheme(newTheme);
+  localStorage.setItem("theme", newTheme);
+});
+
 
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
